@@ -9,7 +9,7 @@ import {
   Turret,
   placeTurret,
   placeTurret2,
-  placeTurret3,
+  placeTurret3
 } from "./src/js/turrets";
 
 class Main extends Scene {
@@ -107,7 +107,10 @@ class Main extends Scene {
     this.nextDragon = 0;
 
     //turrets
-    store.turrets = this.add.group({ classType: Turret, runChildUpdate: true });
+    store.turrets = this.add.group({ 
+      classType: Turret, 
+      runChildUpdate: true 
+    });
     store.arrowTurrets = this.add.group({
       classType: ArrowTurret,
       runChildUpdate: true,
